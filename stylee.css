@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 共通のスタイル */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+header {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  color: white;
+  justify-content: space-between;
+}
+.header-title {
+  font-size: 20px;
+  margin: 23px 20px;
+  font-weight: bold;
+}
+.list {
+  display: flex;
+  color: white;
+  margin: 23px 20px;
+}
+.list li {
+  display: inline-block;
+  padding: 0px 15px;
+  font-size: 16px;
+}
+.list a {
+  color: white;
+}
+#visual {
+  position: relative;
+}
+.visual-img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.visual-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1;
+}
+.wrap {
+  height: 500px;
+}
+.wrap h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 24px 0;
+  color: #000;
+}
+.about-left,
+.about-right {
+  width: 45%;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+.about-right h3,
+p,
+ol {
+  margin-bottom: 15px;
+}
+.about-right h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.about-right p,
+ol {
+  font-size: 14px;
+}
+.about-right {
+  margin: auto 0px;
+}
+/* ショートカットキー同じ。
+ここは、wrap-lisi liだと、リストスタイルがなぜか反応しない。 */
+.about-right li {
+  list-style-type: none;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+#service {
+  height: 400px;
+  width: 100%;
+  background: url(/Users/ayatoymauchi/Downloads/img/bg3.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+}
+.card {
+  width: 450px;
+  height: 220px;
+  background-color: rgba(169, 169, 169, 0.1);
+  padding: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card img {
+  width: 110px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.wrap-title {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+#service h2 {
+  padding: 28px 0;
+}
+.card-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.card h3,
+p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card p {
+  width: 80%;
+  margin: 0 auto;
+}
+.card h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.company {
+  width: 100%;
+  height: 550px;
+}
+.company h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 45px 0;
+  color: #000;
+}
+.table {
+  width: 100%;
+}
+.contain {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  padding: 20px 0;
+}
+.contain th {
+  text-align: left;
+}
+.contain tr {
+  border-bottom: 1px solid #cccccc;
+}
+.contain td {
+  padding: 13px 0;
+}
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+  padding: 40px 0;
+}
+.form {
+  width: 70%;
+  font-size: 15px;
+  margin: 0 auto;
+}
+.button {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  color: black;
+}
+.button-submit:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+label {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+}
+
+#name,
+#email,
+#tell,
+#message {
+  box-sizing: border-box;
+  width: 65%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#message {
+  height: 200px;
+  vertical-align: top;
+}
+#footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 10px;
+}
